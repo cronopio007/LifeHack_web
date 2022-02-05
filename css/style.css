@@ -106,12 +106,27 @@
 
 .seccion_3 .parallax-container div img{
     height: 900px;
+   
 }
 
 /* texto */
 
 .seccion_3{
     padding-left: 8%;
+    background-color:#e0f2f1;
+    opacity:90%;
+}
+
+.seccion_3{
+   
+}
+
+.imagen div img{
+    position: absolute;
+
+}
+.imagen_3{
+    z-index: 1;
 }
 
 #tituloReel{
