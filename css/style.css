@@ -121,13 +121,8 @@
    
 }
 
-.imagen div img{
-    position: absolute;
 
-}
-.imagen_3{
-    z-index: 1;
-}
+
 
 #tituloReel{
     font-size:2.5rem;
@@ -203,4 +198,16 @@ footer h4{
     color: var(--color2);
     font-size: 3.7rem;
     
+}
+
+
+
+/*======   copy   */
+.copy{
+    background-color: #757575;
+    color: white;
+    text-align: center;
+    font-size: 0.7rem;
+    margin-bottom: -1.3rem;
+    opacity: 60%;
 }
