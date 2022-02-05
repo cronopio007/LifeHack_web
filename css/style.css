@@ -1,0 +1,191 @@
+:root {
+   --color1: #4790B6;
+   --color2: #2BBBAD;
+   --gris:#8F9094;
+   --sombra: #C8C8C8;
+}
+
+
+
+
+
+
+.parallax-container {
+    height: 1000px;
+  }
+
+
+
+.navegador{
+    background-color: transparent;
+    padding-left: 3%;   
+}
+
+.logo{
+    font-weight: bolder;
+}
+.Mitexto{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.Mitexto p.titulo{
+    font-size: 3rem;
+    font-family: 'Rowdies', cursive;
+}
+
+.contenido_head{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+}
+
+.boton_head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton_head a{
+    font-weight: bold;
+    font-family: 'Rowdies', cursive;
+}
+
+/*   ======== seccion 2 - que podemos hacer por ti  ===========*/
+
+#titulo_seccion_2{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+}
+.titulo_seccion_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  items de la seccion */
+.box_2 p#sec2_titulo{
+    font-size: 1.5rem;
+  
+    color: black;
+    font-family: 'Rowdies', cursive;
+
+}
+
+.box_2 p#sec2_texto{
+    font-size:1rem;
+    color: black;
+    font-family: 'Patrick Hand', cursive;
+}
+.box_2{
+
+}
+
+.boton_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boton_2 a{
+    font-weight: bold;
+    font-family: 'Patrick Hand', cursive;
+    
+}
+
+.seccion_2{
+    padding-bottom: 3rem;
+}
+
+/* ======   contacto ======       */
+
+
+
+.seccion_3 .parallax-container div img{
+    height: 900px;
+}
+
+/* texto */
+
+.seccion_3{
+    padding-left: 8%;
+}
+
+#tituloReel{
+    font-size:2.5rem;
+    color: black;
+    font-weight: bold;
+    font-family: 'Rowdies', cursive;
+    padding-top: 3rem;
+}
+
+#texto_contacto{
+    font-size: 1.5rem;
+    color: black;
+    font-family: 'Patrick Hand', cursive;
+    padding-bottom: 2rem;
+
+}
+
+.boton_3{
+    padding-bottom: 25.5%;
+}
+.fondo_3{
+    margin-left: 10%;
+}
+
+
+
+/*       =======   footer   ============= */
+
+footer{
+    padding-top: 2rem;
+}
+
+footer h5{
+    color: black;
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: 'Rowdies', cursive;
+}
+
+footer .footer_col li{
+    font-size:0.9rem;
+    font-family: 'Patrick Hand', cursive;
+    list-style: none;
+   
+}
+
+footer .footer_col li a{
+    color: black;
+}
+
+footer .footer_col li a:hover{
+    color: var(--color2);
+}
+
+footer .footer_col li a i{
+    color: #8AC872;
+}
+
+/*redes  sociales*/
+footer h4{
+    font-size:1.5rem;
+}
+
+.redes{
+    padding-left: 1rem;
+}
+.redes a i{
+    font-size:3.2rem;
+    color: var(--gris);
+}
+
+.redes a i:hover{
+    color: var(--color2);
+    font-size: 3.7rem;
+    
+}
