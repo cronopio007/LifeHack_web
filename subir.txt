@@ -1,0 +1,71 @@
+en el terminal:
+source /home/djmnet/virtualenv/django_app/3.7/bin/activate && cd /home/djmnet/django_app
+
+luego instalar django :
+pip install django == 3.0.8
+
+
+se debe crear un proyecto   (el  . es para q lo cree en este mismo directorio)
+django-admin startproject proyecto .
+
+
+# editar el archivo passenger_wsgi.py   (clickd erecho edit)
+
+se borra todo y se pone:
+from proyecto.wsgi import application
+
+luego se entra al proyecto y se modifica el settings.py
+ALLOWED_HOSTS = []
+
+al final se pone esto :
+
+STATIC_URL = '/static/'
+MEDIA_URL='/media/'
+STATICFILES_DIRS=[BASE_DIR +"/assets",]
+STATIC_ROOT='/home/**usuario**/public_html/static'
+MEDIA_ROOT='/home/**usuario**/public_html/media'
+
+se sube al archivo public_html y se crea dentro la carpeta media
+
+#se debe ingresar a la terminal y hacer un colect
+en el manage.py
+
+>> python  manage.py collectstatic
+
+
+/*-----------------------------*/  otra forma
+
+se comprimen los archivos del python a .zip
+y se suben con el boton subir, luego anticlick, descomprimir ahi 
+ ## modificar el __init__.py  -> para la base de datos
+
+ import pymysql
+ pymysql.install_as_MySQL_db()
+
+
+##  cambiar en settings.py 
+
+ STATIC_URL="/static/"
+
+MEDIA_URL='/media/'
+
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),) 
+
+STATIC_ROOT='/home/todocargo/public_html/static'
+
+MEDIA_ROOT='/home/todocargo/public_html/media'
+
+
+
+## modifica el passenger_wsgi.py
+se borra todo y se pone:
+from proyecto.wsgi import application
+
+
+
+
+ALLOWED_HOSTS = ['https://vjdjango.hack.studiok4.net','vjdjango.hack.studiok4.net']
+
+
+
+os.path.join(BASE_DIR, "staticfiles")

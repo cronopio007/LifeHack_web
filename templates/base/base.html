@@ -1,0 +1,350 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Life Hack | Finding Solutions | Encontrando soluciones</title>
+    <link rel="stylesheet" href="{% static 'base/fontawesome/css/all.css'%}">
+    <script src="{% static 'base/fontawesome/js/all.js' %}"></script>
+
+    <link rel="stylesheet" href="{% static 'base/slick/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'base/css/Miestilo1.css' %}">
+    <link rel="stylesheet" href="{% static 'base/slick/slick-theme.css' %}">
+    <link rel="stylesheet" href="{% static 'base/magnific-popup/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'base/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'base/css/templatemo.css' %}" />
+    <link rel="stylesheet" href="{% static 'base/css/estilacho3.css' %}"/>
+
+
+ 
+    <!--
+	The Town
+	https://templatemo.com/tm-525-the-town
+	-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Permanent+Marker&display=swap" rel="stylesheet"> 
+    <!--  fonts-->
+    <!--  font awesome-->
+</head>
+
+<body>
+    {% block hero %}
+    
+<!-- Hero section -->
+<section id="hero">
+    
+    {% endblock hero %}
+
+        <!-- Navigation -->
+        {% block navBar %}
+
+        <nav class="navbar navbar-expand-md tm-navbar">
+            <div class="container">
+                <div class="tm-next logo">
+                    <a href="{% url 'main:Inicio' %}"> </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="tr" aria-label="Toggle navigation">
+                    <i class="fas fa-bars navbar-toggler-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link tm-nav-link" href="{% url 'main:Xq' %}">¿Por qué Life Hack?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tm-nav-link" href="{% url 'main:Inicio' %}">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tm-nav-link" href="{% url 'main:portafolio' %}">Portafolio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle tm-nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Servicios
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" id="drop" href="{% url 'main:software' %}"><i class="fa-solid fa-code"></i> Software a medida</a>
+                                <a class="dropdown-item" id="drop" href="{% url 'main:web_app' %}"><i class="fa-solid fa-mobile"></i>  Paginas y aplicaciones web</a>
+                                <a class="dropdown-item" id="drop" href="{% url 'main:socialMedia' %}"><i class="fa-solid fa-film"></i>  Social Media Marketing</a>
+                                <a class="dropdown-item" id="drop" href="{% url 'main:hosting' %}"><i class="fa-solid fa-database"></i>  Hosting & Dominio</a>
+                                <a class="dropdown-item" id="drop" href="{% url 'main:branding' %}"><i class="fa-solid fa-lightbulb"></i>  Branding y posicionamiento web</a>
+                                <a class="dropdown-item" id="drop" href="{% url 'main:publicidad' %}"><i class="fa-solid fa-bullhorn"></i>  Publicidad online</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tm-nav-link" href="#contact">Blog</a>
+                        </li>
+                        <li class="nav-item" id="display">
+                            <a class="nav-link tm-nav-link" href="">|</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tm-nav-link text-center" href="" id="boton-life2"><i class="fa-solid fa-phone"></i>  +51 921 136 755</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        {% endblock navBar %}
+
+        {% block textoHero %}
+        <div class="text-center tm-hero-text-container">
+            <div class="tm-hero-text-container-inner">
+                <h2 class="tm-hero-title titulo">Encontrando soluciones</h2>
+                <p class="tm-hero-subtitle hero_texto">
+                    Somos una start up dedicada implementar soluciones tecnologicas a los problemas que tengas en tu negocio.
+                </p>
+            </div>
+
+            <div class="tm-next tm-intro-next " style="margin-top: 10rem;" id="btn-asesor">
+               
+                    <a href="https://youtube.com" id="boton-life" class="text-center btn-asesor" >
+                        Encontrar un asesor
+                    </a>
+               
+            </div>
+        
+        {% endblock textoHero %}
+
+
+    </section>
+
+
+
+{% block servicios %}
+
+
+<section id="work" class="tm-section-pad-top">
+    <div class="container tm-container-gallery">
+        <div class="row">
+            <div class="text-center col-12">
+                <h2 class="tm-text-primary tm-section-title mb-4 servicios">Nuestros Servicios</h2>
+                <p class="mx-auto tm-work-description">
+                    "Curabitur ac orci ac lorem blandit volutpat. Sed ac sodales nibh, ut porttitor elit. Sed id dui mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia."
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card-group">
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'base/img/comercio-electronico.png' %}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Software a medida</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'base/img/gallery-img-02.jpg' %}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Aplicaciones & páginas web<i class="fa fa-reddit-alien" aria-hidden="true"></i></h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="{%  static 'base/img/soluciones.jpg' %}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Comunity Manager</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-group">
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'base/img/soluciones-informaticas.jpg' %}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Hosting & Dominio</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'base/img/teconolico.jpg' %}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Creacion de Marca</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'base/img/the-town-01.jpg' %}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">UX & UI</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+{% endblock servicios %}
+
+
+{% block paralax %}
+  
+<section>
+    <div class="parallax2">
+        <h3 class="text-center h3-parallax">Pregunta por un asesor</h3>
+        <p class="text-center p-parallax"> Encuentra un asesot que te guie para tomar el camino correcto en el markting de tu empresa.</p>
+        <br><br>
+        <center>
+            <a href="" class="text-center" id="boton-life">Solicitar</a>
+        </center>
+    </div>
+</section>
+
+{% endblock paralax %}
+
+
+{% block relleno %}
+<section id="introduction" class="tm-section-pad-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="{% static 'base/img/the-town-01.jpg' %}" alt="Image" class="img-fluid tm-intro-img" />
+            </div>
+            <div class="col-lg-6">
+                <div class="tm-intro-text-container">
+                    <h2 class="tm-text-primary mb-4 tm-section-title">Introduction</h2>
+                    <p class="mb-4 tm-intro-text">
+                        The Town is <strong>simple CSS template</strong> built on Bootstrap v4.1.3 and this is a little parallax layout that you can use for your websites.
+                    </p>
+                    <p class="mb-5 tm-intro-text">
+                        Please tell your friends about our site
+                        <a rel="nofollow" href="https://templatemo.com">templatemo</a>. Thank you. Curabitur dapibus tristique enim a imperdiet. Etiam tristique sem sed condimentum posuere.
+                    </p>
+                    <div class="tm-next">
+                        <a href="#work" class="tm-intro-text tm-btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row tm-section-pad-top">
+            <div class="col-lg-4">
+                <i class="fas fa-4x fa-bus text-center tm-icon"></i>
+                <h4 class="text-center tm-text-primary mb-4">Curabitur at elit eu risus</h4>
+                <p>
+                    Sed ultrices sit amet mi eu malesuada. Cras ultricies gravida nisi, ac pellentesque nunc tincidunt quis. Aenean at ornare lacus. Duis imperdiet lacus justo.
+                </p>
+            </div>
+
+            <div class="col-lg-4 mt-5 mt-lg-0">
+                <i class="fas fa-4x fa-bicycle text-center tm-icon"></i>
+                <h4 class="text-center tm-text-primary mb-4">Nunc sed metus vel nisi</h4>
+                <p>
+                    Praesent ut finibus leo. Duis et tempus ipsum, id pretium nunc. Vivamus imperdiet sem quis orci pharetra convallis. Nunc a tempus nisi, sed fringilla purus. In hac habitasse platea.
+                </p>
+            </div>
+            <div class="col-lg-4 mt-5 mt-lg-0">
+                <i class="fas fa-4x fa-city text-center tm-icon"></i>
+                <h4 class="text-center tm-text-primary mb-4">Fusce sed nisi sagittis</h4>
+                <p>
+                    Donec vestibulum libero nisl. Curabitur ac orci ac lorem blandit volutpat. Sed ac sodales nibh, ut porttitor elit. Sed id dui mi. Vestibulum ante ipsum primis in faucibus.
+                </p>
+            </div>
+        </div>
+</section>
+
+{% endblock relleno %}
+
+
+      <!-- Contact -->
+{% block footer %}
+<section id="contact">
+    <footer class="footer-99382" id="footlh">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 pr-md-5">
+                    <div class="input-group">
+                        <h3>Recibe tips de marketing</h3>
+                        <div id="search-autocomplete" class="form-outline" style="width: 70%;">
+                            <input type="search" id="form1" class="form-control" placeholder="contacto@lifehack.com.pe" style="font-size: 13px;" />
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault" required>
+                                He leído y acepto la Politica de privacidad.
+                            </label>
+                        </div>
+                        <a href="#" id="suscribete" class="btn btn-primary btn-default">Suscribirse</a>
+                        <img src="img/white-life-hack.png" alt="Comercio electronico" id="logo-foot">
+                    </div>
+                </div>
+                <div class="col-md">
+                    <h3>Descubre</h3>
+                    <ul class="list-unstyled nav-links">
+                        <li><a href="#">Portafolio</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <h3>politicas</h3>
+                    <ul class="list-unstyled nav-links">
+                        <li><a href="#">Politicas de privacidad</a></li>
+                        <li><a href="#">Terminos & Condiciones</a></li>
+                        <li><a href="#">Colaboradores</a></li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <h3>Siguenos</h3>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <a href="#" class="pl-0">
+                                <i class="fa-brands fa-facebook fa-xl"></i>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="#" class="pl-0">
+                                <i class="fa-brands fa-instagram fa-xl"></i>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="#" class="pl-0">
+                                <i class="fa-brands fa-youtube fa-xl"></i>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="#" class="pl-0">
+                                <i class="fa-brands fa-twitter fa-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-12 text-center">
+                    <div class="copyright pt-5">
+                        <p><small>&copy; 2022 LIFE HACK | Todos los derechos reservados.</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+
+{% endblock footer %}
+
+
+
+    
+    <script src="{% static 'base/js/jquery-1.9.1.min.js' %}"></script>
+    <script src="{% static 'base/slick/slick.min.js' %}"></script>
+    <script src="{% static 'base/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'base/js/jquery.singlePageNav.min.js' %}"></script>
+    <script src="{% static 'base/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'base/js/jquery-3.6.0.min.map.js' %}"></script>
+    <script src="{% static 'base/js/jquery.min.map.js' %}"></script>
+
+</body>
+
+</html>

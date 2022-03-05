@@ -1,0 +1,258 @@
+.logo {
+    width: 20%;
+    height: 69px;
+    background: url('..base/img/white-life-hack.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 770px) {
+    .logo {
+        width: 40%;
+        transition-duration: 2s;
+    }
+    #display {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        font-size: 10px;
+    }
+    #display {
+        display: none;
+    }
+}
+
+.scroll-logo {
+    background: url('../base/img/logo-life-hack.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 190px;
+    height: 69px;
+    transition-duration: 1s;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+#drop {
+    color: #000;
+    font-size: 14px;
+}
+
+#drop:hover {
+    color: #000;
+    font-size: 14px;
+    background: #ffcc00;
+}
+
+.navbar a:hover {
+    color: #ffcc00;
+}
+
+#boton-life {
+    background: var(--vivo);
+    border-radius: 7px;
+    color: var(--azul);
+    padding: 10px 15px 10px 15px;
+    font-size: 13px;
+    border: none;
+    width: 14%;
+    text-transform: uppercase;
+    border: solid 1px var(--azul);
+    font-weight: 600;
+    /* sombra*/
+    box-shadow: 0px 5px var(--azul);
+}
+
+#boton-life:hover {
+    background: whitesmoke;
+    color: var(--azul);
+    font-weight: 700;
+    transition-duration: 1s;
+    /*border: none; */
+    box-shadow: none;
+}
+
+#boton-life2 {
+    background: var(--vivo);
+    border-radius: 18px;
+    color: var(--azul);
+    border: solid 1px var(--azul);
+}
+
+#boton-life2:hover {
+    background: #fff;
+    color: var(--azul);
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--azul);
+    transition-duration: 1s;
+}
+
+.h3-parallax {
+    padding-top: 3em;
+    color: #fff;
+}
+
+.p-parallax {
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    #boton-life2 {}
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url("../img/teconolico.jpg");
+    /* Full height */
+    height: 350px;
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#footlh {
+    background: #454545;
+    padding-top: 3em;
+}
+
+#footlh p {
+    color: #c4c4c4;
+    font-size: 15px;
+}
+
+#footlh h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-bottom: 1em;
+}
+
+#footlh a {
+    color: #c4c4c4;
+    font-size: 15px;
+}
+
+#footlh a:hover {
+    color: #fff;
+}
+
+#footlh label {
+    color: #fff;
+    font-size: 12px;
+}
+
+#footlh #suscribete {
+    font-size: 13px;
+    color: #151515;
+    width: 70%;
+    background: #ffcc00;
+    border-style: solid;
+    border-color: transparent;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition-duration: 2s;
+}
+
+#footlh #suscribete:hover {
+    color: black;
+    background: #fe9865;
+    transition-duration: 1s;
+}
+
+#logo-foot {
+    width: 230px;
+    padding-top: 2em;
+}
+
+
+
+/* ===== mi codigo  ===*/
+/*====================================== */
+/*  colores */
+:root {
+    --color1: #4790B6;
+    --color2: #2BBBAD;
+    --claro1: #80cbc4;
+    --gris:#8F9094;
+    --sombra: #C8C8C8;
+    --vivo: #FFCC00;
+    --azul:#183153;
+ }
+
+ .titulo{
+    
+    font-family: 'Patrick Hand', cursive;
+ }
+ 
+ .hero_texto{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2rem;
+ }
+ 
+ .btn{
+     margin-top: 4rem;
+    
+ }
+ /*  seccion de contacto con la foto */
+
+.seccion_3{
+    margin-top:60px;
+}
+
+.boton_contacto{
+    
+    background-color: var(--vivo);
+    border: solid 2px var(--azul);
+    padding: 10px 20px 10px 20px;
+    border-radius: 18px;
+    color: var(--azul);
+
+}
+.boton_3 a{
+    color: var(--azul);
+}
+
+
+ #tituloReel{
+    font-size:2.5rem;
+    color: black;
+    font-weight: bold;
+    font-family: 'Rowdies', cursive;
+    padding-top: 3rem;
+}
+#texto_contacto{
+    font-size: 1.5rem;
+    color: black;
+    font-family: 'Patrick Hand', cursive;
+    padding-bottom: 2rem;
+
+}
+.boton_3{
+    padding-bottom: 25.5%;
+    cursor: pointer;
+    
+   
+}
+.fondo_3{
+    margin-left: 10%;
+}
+
+#btn-asesor{
+    margin-top:15rem;
+}
+/*=======    servicios   =================== */
+
+.servicios{
+    font-family: 'Rowdies', cursive;
+    font-weight: 800;
+}
+

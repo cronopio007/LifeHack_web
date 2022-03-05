@@ -1,0 +1,8 @@
+levantar el entorno virtual
+proyectos/
+entvirt\scripts\activate.bat
+
+>> manage.py runserver
+
+
+
