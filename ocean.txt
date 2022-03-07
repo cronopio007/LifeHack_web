@@ -1,0 +1,49 @@
+tienes q tenerlo en github o algun hub primero
+
+git clone -b <branchname> <remote-repo-url>
+
+
+
+crear la carpeta -> mkdir  carpetaDjango
+entrar
+instalar pip   -> sudo apt install -y python3-pip
+
+crear un entorno virtual
+virtualenv mi_env
+
+. mi_env/bin/activate
+
+pip install django
+
+
+### autorizar el firewall
+sudo ufw allow 8000
+
+###
+
+python manage.py runserver 147.182.196.51:8000
+
+http://147.182.196.51:8000
+
+
+## para proteger la key del python 
+https://pypi.org/project/python-decouple/
+https://www.udemy.com/course/sistema-de-compra-y-facturacion-con-python-usando-django/learn/lecture/20151984#overview
+
+se debe crar un archivo .env 
+
+
+
+
+### es mejor crear un archivo requeremts.txt
+
+
+
+### conectarse a filezilla solucion
+en el servidor  modificar el archivo
+nano etc/ssh/sshd_config
+
+modificarlo a yes
+
+# luego reiniciar el servicio
+service sshd restart
