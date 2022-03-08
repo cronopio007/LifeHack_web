@@ -1,0 +1,22 @@
+login n heroku
+
+heroku login
+
+instalar en el archivo  
+pip install dj-database-url gunicorn whitenoise 
+
+#ver todas las librerias instaladas
+pip freeze
+pip freeze > requieremets.txt
+#revisar el archivo
+cat  requieremets.txt
+
+# en el dir del projecto crear el Procfile
+web: gunicorn main.wsgi
+
+# se crea runtime.txt
+python-3.8.1
+
+
+# el proyecyo se levantaasi ahora
+manage.py runserver --settings=app.local_settings
