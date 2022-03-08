@@ -20,3 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(('main.urls', 'main'), namespace='Inicio')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+
+# se agrega esto para el deploy : + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
