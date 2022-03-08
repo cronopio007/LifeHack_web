@@ -1,6 +1,6 @@
 login n heroku
 
-heroku login
+heroku login -i
 
 instalar en el archivo  
 pip install dj-database-url gunicorn whitenoise 
@@ -20,3 +20,7 @@ python-3.8.1
 
 # el proyecyo se levantaasi ahora
 manage.py runserver --settings=app.local_settings
+
+
+
+###git push heroku django-heroku
