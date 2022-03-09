@@ -1,0 +1,17 @@
+:root{
+    --naranja: #ffcc00;
+}
+
+
+.miTop{
+
+    height:5rem;
+    background-color:#2E3032;
+    
+}
+
+#titulo-servicio{
+    text-decoration: underline black;
+    color: var(--naranja);
+    
+}

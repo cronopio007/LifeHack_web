@@ -22,7 +22,7 @@ import django_heroku
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Activate Django-Heroku.
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 
 
 # Quick-start development settings - unsuitable for production
