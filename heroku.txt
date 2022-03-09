@@ -24,3 +24,12 @@ manage.py runserver --settings=app.local_settings
 
 
 ###git push heroku django-heroku
+
+
+### requirements
+pip install -r requirements.txt
+
+
+####from django.conf.urls.static import static
+myvenv) $ heroku domains:add www.example.com
+(myvenv) $ heroku domains
