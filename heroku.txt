@@ -7,9 +7,9 @@ pip install dj-database-url gunicorn whitenoise
 
 #ver todas las librerias instaladas
 pip freeze
-pip freeze > requieremets.txt
+
 #revisar el archivo
-cat  requieremets.txt
+cat  requiremets.txt
 
 # en el dir del projecto crear el Procfile
 web: gunicorn main.wsgi
@@ -34,3 +34,7 @@ pip install -r requirements.txt
 
 myvenv) $ heroku domains:add www.example.com
 (myvenv) $ heroku domains
+
+
+#corrar un repo
+git clone -b <branchname> <remote-repo-url>
