@@ -31,5 +31,6 @@ pip install -r requirements.txt
 
 
 ####from django.conf.urls.static import static
+
 myvenv) $ heroku domains:add www.example.com
 (myvenv) $ heroku domains

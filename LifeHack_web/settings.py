@@ -148,7 +148,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 #tambien se define aca el path del los static, para q use el los archivos de la carpeta
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'LifeHack_web/static'),)
 
 
 db_from_env = dj_database_url.config(conn_max_age=500)
