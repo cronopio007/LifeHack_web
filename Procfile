@@ -1,0 +1,1 @@
+web: gunicorn LifeHack_web.wsgi  --log-file -
